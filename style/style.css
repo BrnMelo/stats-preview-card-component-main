@@ -33,7 +33,7 @@ body {
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
 
   padding: 1rem;
 
@@ -61,8 +61,6 @@ body {
   background: var(--accent);
 
   border-radius: 0.8rem 0.8rem 0 0;
-  
-  filter: saturate(650%) contrast(100%) grayscale(35%) brightness(.5);
 }
 
 .card header img {
@@ -73,7 +71,8 @@ body {
 
   border-radius: 0.8rem 0.8rem 0 0;
 
-  filter: opacity(75%);
+  mix-blend-mode: multiply;
+  opacity: 0.8;
 }
 
 .content {
